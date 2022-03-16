@@ -1,0 +1,183 @@
+/*
+fn fibIter(i64 n) -> i64 {
+    i64 prevPrev = 0;
+    i64 prev = 0;
+    i64 curr = 1;
+
+    for(i64 i = 1; i < n ; ++i;) {
+
+        prevPrev = prev;
+        prev = curr;
+        curr = prevPrev + prev;
+    }
+
+    return curr;
+}
+fn reg(i64 a, i64 b, i64 c, i64 d, i64 e, i64 f, i64 g, i64 h, i64 j, i64 l, i64 p, i64 q, i64 w) -> i64 {
+    i64 r = 0;
+    f32 z = 5.5f;
+    print a,' ',b,' ',c,' ',d,' ',e,' ',f,' ',g,' ',h,' ',j,' ',l,' ',p,' ',q,' ',w,' ',r,' ',z,'\n';
+
+    return a + b + c + d + e + f + g + h + j + l + p + q + w + r;
+}
+
+struct test {
+    i64 c;
+    i64 b;
+    i64[5][5] arr;
+}
+struct ptrTest {
+    test* ptr;
+}
+
+fn testFunc() -> i64[5] {
+
+    i64[5] arr;
+    for(i64 i = 0; i < 5 ; ++i;) {
+        arr[i] = i;
+    }
+    return arr;
+}
+fn fibRec(i64 n) -> i64 {
+    if(n <= 1) return n;
+    return fibRec(n-1) + fibRec(n-2);
+}
+*/
+
+
+
+main {
+
+    i64[5]* ptr;
+    ptr[0][0];
+
+    i64[5]**[5][5]* ptr;
+    *((*ptr)[1][5]) = <i64[5]*>5;
+
+    /*
+    i64[5] arr;
+    arr[0] = 50;
+    arr[1] = 100;
+    arr[2] = 250;
+    arr[3] = 660;
+    arr[4] = 999;
+
+    i64[5] arr2;
+    //arr2[0] = 0;
+    //arr2[1] = 1;
+    //arr2[2] = 2;
+    //arr2[3] = 3;
+    //arr2[4] = 4;
+    arr2 = arr;
+
+    for(i64 i = 0; i < 5; ++i;) {
+        print arr2[i],'\n';
+    }
+    
+    print '\n';
+    for(i64 i = 0; i < 5; ++i;) {
+        print i,' ',arr[i],'\n';
+    }
+
+    i64[5] arr = testFunc();
+
+    test[2] t;
+    t[1].c = 10;
+    t[1].b = 20;
+
+    ptrTest tPtr;
+    tPtr.ptr = <test*>t;
+
+    *(tPtr.ptr) = t[0];
+    print (*(tPtr.ptr)).c,' ',(*(tPtr.ptr)).b;
+
+    test p0;
+    p0.c = 10;
+    p0.b = 10;
+    for(i64 i = 0; i < 6 ; ++i;) {
+        for(i64 k = 0; k < 5 ; ++k;) {
+            p0.arr[i][k] = k;
+        }
+    }
+
+
+    print p1.c,' ',p1.b,'\n';
+    for(i64 i = 0; i < 6 ; ++i;) {
+        for(i64 k = 0; k < 5 ; ++k;) {
+            print p1.arr[i][k],' ';
+        }
+        print '\n';
+    }
+
+    test[2] t;
+    t[0].c = 5;
+    t[0].b = 55;
+    t[1].c = 5;
+    t[1].b = 55;
+
+    for(i64 i = 0; i < 5; ++i;) {
+        for(i64 k = 0; k < 5; ++k;) {
+            t[0].arr[i][k] = k;
+            t[1].arr[i][k] = k * 2 + 1;
+        }
+    }
+
+    ptrTest t1;
+    t1.ptr = <test*>t;
+    
+    print t[0].c,' ',t[0].b,' ',t[1].c,' ',t[1].b,'\n';
+    for(i64 i = 0; i < 5; ++i;) {
+        for(i64 k = 0; k < 5; ++k;) {
+            print (*(t1.ptr)).arr[i][k],' ',(*(t1.ptr + 1)).arr[i][k],' ';
+        }
+        print '\n';
+    }
+
+    i64[10] arr;
+    i64* arrPtr = <i64*>arr;
+   
+    for(i64 i = 0; i < 10; ++i;) {
+        arrPtr[i] = i;
+    }
+
+    for(i64 i = 0; i < 10; ++i;) {
+        print arrPtr[i],' ';
+    }
+    print '\n';
+
+    test[2] t0;
+    for(i64 i = 0; i < 5 ; ++i;) {
+        for(i64 k = 0; k < 5 ; ++k;) {
+            t0[0].arr[i][k] = k;
+            t0[1].arr[i][k] = k * 2;
+        }
+    }
+    for(i64 i = 0; i < 5 ; ++i;) {
+        for(i64 k = 0; k < 5 ; ++k;) {
+            print t0[0].arr[i][k],' ',t0[1].arr[i][k],"  ";
+        }
+        print '\n';
+    }
+    
+
+    i64[10][10] arr;
+    i64[10] arr2;
+    for(i64 k = 0; k < 10 ; ++k;) {
+        arr2[k] = k;
+    }
+    for(i64 i = 0; i < 10 ; ++i;) {
+        for(i64 k = 0; k < 10 ; ++k;) {
+            arr[i][k] = arr2[k];
+        }
+    }
+
+    for(i64 i = 0; i < 10 ; ++i;) {
+        for(i64 k = 0; k < 10 ; ++k;) {
+            print arr[i][k],' ';
+        }
+        print '\n';
+    }
+
+    print reg(0,1,2,3,4,5,6,7,8,9,10,11,12),'\n';
+    */
+}

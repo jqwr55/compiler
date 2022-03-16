@@ -1,0 +1,10 @@
+
+struct Q {
+    i32 m0,
+    i32 m1
+}
+
+fn q() -> void {
+
+
+}

@@ -1,0 +1,15 @@
+#! /mnt/1tb_hdd/sources/dev/Projects/compiler/shell/shell
+
+fn foo(i64 a, i64 b) -> i64 {
+    return a + 5 * b;
+}
+
+main {
+
+    i64* ptr = (i64*)malloc((u64)32 );
+    for(i64 i = 0; i < 4; i = i + 1;) {
+        ptr[i] = i;
+    }
+    free((void*)ptr);
+
+}
